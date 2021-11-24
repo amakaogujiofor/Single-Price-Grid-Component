@@ -15,12 +15,12 @@ body {
   background-color: var(--clr-neutral);
   font-family: var(--ff-main);
   padding: 1em;
+  width: 375px;
+  margin-top: 3em;
 }
 
 .container {
-  margin-top: 3em;
-  /* background-color: #fff; */
-  /* padding: 1.3em; */
+  margin: 0 auto;
 }
 
 .top-content {
@@ -31,6 +31,11 @@ body {
   background-color: var(--clr-primary);
   padding: 1.2em;
   padding-bottom: 2.5em;
+}
+.final-content {
+  background-color: #4abebd;
+  padding: 1.2em;
+  padding-bottom: 1em;
 }
 
 /* Typography */
@@ -51,11 +56,18 @@ h2 {
   line-height: 22px;
   color: var(--clr-grayishblue);
   font-weight: 400;
+  opacity: 0.7;
 }
 
-h3 {
+h3,
+h4 {
   color: var(--clr-neutral);
   margin-bottom: 1em;
+}
+
+h4 {
+  margin-top: 0.5em;
+  font-size: 1.15rem;
 }
 .mid-para {
   font-size: 2rem;
@@ -79,13 +91,86 @@ span {
   font-size: 0.9rem;
 }
 
-.membership {
-}
-
 .signup-btn {
   background-color: var(--clr-accent);
-  padding: 0.8em 7em;
+  padding: 0.8em 6.5em;
   border-radius: 6px;
   color: #fff;
   text-decoration: none;
+  margin-left: 1em;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  list-style: none;
+  text-align: left;
+  color: #fff;
+  font-weight: 400;
+  font-size: 0.9rem;
+  line-height: 20px;
+  opacity: 0.7;
+}
+
+/* Media Queries */
+
+@media (min-width: 600px) {
+  body {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .container {
+    margin-top: 3em;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+  .top-content {
+    padding: 2em;
+  }
+
+  .membership {
+    display: flex;
+  }
+
+  .middle-content {
+    width: 50%;
+  }
+
+  .details {
+    width: 50%;
+  }
+  .final-content {
+    padding-bottom: 2em;
+  }
+  .signup-btn {
+    padding: 1em 5em;
+    font-size: 1.2rem;
+  }
+  h2 {
+    font-size: 1.1rem;
+  }
+  .third-para {
+    font-size: 1rem;
+  }
+  .mid-para {
+    margin-bottom: 0.2em;
+  }
+  li {
+    font-size: 1rem;
+  }
+  ul {
+    padding: 1em;
+  }
+}
+
+@media (min-width: 1280px) {
+  .container {
+    width: 70%;
+  }
+  .signup-btn {
+    padding: 1em 6em;
+  }
 }
