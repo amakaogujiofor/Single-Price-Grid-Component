@@ -1,0 +1,91 @@
+/* Custom Styles */
+
+:root {
+  /* Font Family */
+  --ff-main: "Karla", sans-serif;
+
+  /* Colors */
+  --clr-primary: hsl(179, 62%, 43%);
+  --clr-accent: hsl(71, 73%, 54%);
+  --clr-neutral: hsl(204, 43%, 93%);
+  --clr-grayishblue: hsl(218, 22%, 67%);
+}
+
+body {
+  background-color: var(--clr-neutral);
+  font-family: var(--ff-main);
+  padding: 1em;
+}
+
+.container {
+  margin-top: 3em;
+  /* background-color: #fff; */
+  /* padding: 1.3em; */
+}
+
+.top-content {
+  background-color: #fff;
+  padding: 1.2em;
+}
+.middle-content {
+  background-color: var(--clr-primary);
+  padding: 1.2em;
+  padding-bottom: 2.5em;
+}
+
+/* Typography */
+
+h1 {
+  font-size: 1.2rem;
+  color: var(--clr-primary);
+}
+
+p {
+  font-size: 1rem;
+  color: var(--clr-accent);
+  font-weight: 700;
+}
+
+h2 {
+  font-size: 0.9rem;
+  line-height: 22px;
+  color: var(--clr-grayishblue);
+  font-weight: 400;
+}
+
+h3 {
+  color: var(--clr-neutral);
+  margin-bottom: 1em;
+}
+.mid-para {
+  font-size: 2rem;
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 0.5em;
+  font-weight: 700;
+}
+span {
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--clr-neutral);
+  opacity: 0.5;
+}
+
+.third-para {
+  color: var(--clr-neutral);
+  font-weight: 400;
+  margin-bottom: 3em;
+  margin-top: 0;
+  font-size: 0.9rem;
+}
+
+.membership {
+}
+
+.signup-btn {
+  background-color: var(--clr-accent);
+  padding: 0.8em 7em;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+}
